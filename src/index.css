@@ -56,7 +56,15 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+/* 93c5fd */
+.custom-button {
+  background: radial-gradient(circle, #646cff 1%, #93c5fd 1%) center/15000%;
+  transition: background 0.8s;
 
+  &:hover {
+    background-size: 100%;
+  }
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

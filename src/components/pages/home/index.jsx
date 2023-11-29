@@ -13,7 +13,7 @@ export default function Index() {
     <>
       <Navbar />
       <HeroSection />
-      <div className=''>
+      <div className=' border'>
         <Services />
       </div>
       <AboutUsSection />
