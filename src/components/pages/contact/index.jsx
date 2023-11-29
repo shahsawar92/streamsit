@@ -7,12 +7,9 @@ import Navbar from "../../common/navbar/navbar.jsx";
 export default function Index() {
   return (
     <>
-      <Navbar bgColor='black' textColor='white' />
-
       <HeroContact />
-
       <ContactFormSection />
-      <div className='px-12 bg-gray-200'>
+      <div className="px-12 bg-gray-200">
         <GoogleMap />
       </div>
 

@@ -11,24 +11,23 @@ import Footer from "../../common/footer/footer";
 export default function Index() {
   return (
     <>
-      <Navbar />
       <ServicesHero />
       <ServicesCards />
       <ImageTextSection
         image={ScreenShot1}
-        title='Heading'
-        subtitle='Subheading'
-        description='lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-        link='/'
-        className='md:flex-row-reverse '
+        title="Heading"
+        subtitle="Subheading"
+        description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        link="/"
+        className="md:flex-row-reverse "
       />
       <ImageTextSection
         image={ScreenShot3}
-        title='Heading'
-        subtitle='Subheading'
-        description='lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-        link='/'
-        className='md:flex-row-reverse'
+        title="Heading"
+        subtitle="Subheading"
+        description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        link="/"
+        className="md:flex-row-reverse"
       />
       <PartnerLogosSection />
       <CallToAction />

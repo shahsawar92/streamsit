@@ -9,7 +9,6 @@ import Footer from "../../common/footer/footer";
 export default function Index() {
   return (
     <>
-      <Navbar />
       <AboutHeroSection />
       <CallToAction2 />
       <WhoWeAreSection />

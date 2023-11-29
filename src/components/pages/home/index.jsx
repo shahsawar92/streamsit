@@ -11,9 +11,9 @@ import PartnerLogosSection from "../../common/partners.jsx";
 export default function Index() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroSection />
-      <div className=' border'>
+      <div className="">
         <Services />
       </div>
       <AboutUsSection />
