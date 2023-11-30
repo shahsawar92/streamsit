@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { GoDotFill } from "react-icons/go";
-import { MdPhoneEnabled } from "react-icons/md";
+// import { MdPhoneEnabled } from "react-icons/md";
 
 import streamitlogo from "../../../assets/streamitlogo.png";
 import { useState } from "react";
@@ -41,7 +40,7 @@ function Navbar() {
       <div className="flex justify-center items-center gap-4 font-bold ">
         <p>Call Us: +92 345 9394040</p>
         <p className="text-[#646cff]">
-          <MdPhoneEnabled />
+          {/* <MdPhoneEnabled /> */}
         </p>
       </div>
     </div>

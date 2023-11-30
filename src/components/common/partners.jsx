@@ -45,9 +45,10 @@ const PartnerLogosSection = () => {
   };
 
   return (
-    <div className='py-8 my-20 bg-white'>
-      <h2 className='text-3xl font-bold mb-6 text-center'>Our Partners</h2>
-      <Slider {...settings}>
+    <div className='p-8 bg-gray-100/50 container mx-auto  rounded'>
+      <h2 className='text-3xl font-bold '>Our Partners</h2>
+    <div>
+    <Slider {...settings} className="py-20">
         <div style={stylespartners}>
           <img src={logo1} alt='Partner 1' className='h-16 w-auto mx-auto' />
         </div>
@@ -64,6 +65,7 @@ const PartnerLogosSection = () => {
           <img src={logo5} alt='Partner 5' className='h-16 w-auto mx-auto' />
         </div>
       </Slider>
+    </div>
     </div>
   );
 };
