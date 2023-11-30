@@ -9,6 +9,7 @@ export default function Services() {
         heading="Monitoring"
         description="Completely customized solution to provide real-time insights of all the connected hardware on remote sites anywhere & anytime with ease."
         className="bg-blue-300"
+        Services={true}
         icon={img}
         duration={0.5}
         delay={0} // Set the delay for this card

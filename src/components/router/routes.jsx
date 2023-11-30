@@ -5,6 +5,7 @@ import About from "../pages/about/index";
 import Contact from "../pages/contact/index";
 import Services from "../pages/services/index";
 import Navbar from "../common/navbar/navbar";
+import Footer from "../common/footer/footer";
 
 function AppRoutes() {
   return (
@@ -17,6 +18,7 @@ function AppRoutes() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
       </Routes>
+      <Footer />
     </>
   );
 }

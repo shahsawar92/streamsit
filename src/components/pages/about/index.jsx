@@ -13,7 +13,6 @@ export default function Index() {
       <CallToAction2 />
       <WhoWeAreSection />
       <CallToAction />
-      <Footer />
     </>
   );
 }

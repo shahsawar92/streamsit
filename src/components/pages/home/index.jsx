@@ -20,7 +20,7 @@ export default function Index() {
       <PartnerLogosSection />
       <GoogleMap />
       <CallToAction />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

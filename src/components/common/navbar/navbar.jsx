@@ -18,14 +18,12 @@ function Navbar() {
       <div>
         <img src={streamitlogo} />
       </div>
-      <div className="flex gap-12 text-2xl self-center">
+      <div className="flex gap-12 text-xl self-center">
         {menuArray?.map((item, index) => (
           <Link
             key={index}
             to={item.path}
-            className={
-              active === item.title ? "text-[#646cff]" : "text-[#93c5fd]"
-            }
+            className={active === item.title ? "text-[#646cff]" : "text-black"}
           >
             <p onClick={(e) => setActive(item?.title)}>{item.title}</p>
             {/* {active === item.title && (
@@ -39,9 +37,7 @@ function Navbar() {
 
       <div className="flex justify-center items-center gap-4 font-bold ">
         <p>Call Us: +92 345 9394040</p>
-        <p className="text-[#646cff]">
-          {/* <MdPhoneEnabled /> */}
-        </p>
+        <p className="text-[#646cff]">{/* <MdPhoneEnabled /> */}</p>
       </div>
     </div>
   );

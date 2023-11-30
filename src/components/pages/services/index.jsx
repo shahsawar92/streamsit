@@ -31,7 +31,6 @@ export default function Index() {
       />
       <PartnerLogosSection />
       <CallToAction />
-      <Footer />
     </>
   );
 }

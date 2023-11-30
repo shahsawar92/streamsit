@@ -1,42 +1,73 @@
-import * as React from "react"
-import streamitlogo from "../../../assets/streamitlogo.png"
+import * as React from "react";
+import streamitlogo from "../../../assets/streamitlogo.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <div className="flex container mx-auto">
-      <div>
+    <div class=" container mx-auto p-8 py-24 flex flex-col gap-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div>
+          <img src={streamitlogo} />
+          <p>
+            We are persistently trying to upgrade our product and improve our
+            services to suit our customer’s requirements. We are pleased to
+            introduce our product MAKWAY-313 designed specifically for RMC. We
+            assure you that this product is extremely cost-effective,
+            user-friendly, and eco-friendly in nature.
+          </p>
+        </div>
+        <div className="flex flex-col gap-4 mt-4">
+          <p className="text-black font-bold text-2xl">Useful Links.</p>
+          <div className=" flex flex-col gap-4 ">
+            <Link to="/">Home</Link>
+            <Link to="/services">Services</Link>
+            <Link to="/contact">Contact Us</Link>
+            <Link to="/about">About Us</Link>
 
-        <img src={streamitlogo} />
-        <p>
-          We are persistently trying to upgrade our product and improve our
-          services to suit our customer’s requirements. We are pleased to
-          introduce our product MAKWAY-313 designed specifically for RMC. We
-          assure you that this product is extremely cost-effective,
-          user-friendly, and eco-friendly in nature.
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-8 mt-4">
+          {" "}
+          <p className="text-black font-bold text-2xl">Contact</p>
+          <p>Millenium Heights F11 Markaz Islamabad 44000, Pakistan</p>
+          <p>info@streamsits.com sales@streamsits.com</p>
+          <p> +92 345 9394040</p>
+        </div>
+        <div className="flex flex-col gap-8 mt-4">
+          {" "}
+          <p className="text-black font-bold text-2xl">
+            Sign Up for Newsletter
+          </p>
+          <p>
+            Keep me up to date with content, updates, and offers from Streams IT
+            Solutions
+          </p>
+          <div className="flex gap-1 ">
+            <input
+              type="text"
+              className="text-lg border p-2 rounded-2xl"
+              placeholder="Enter Your Email"
+            />
+            <button className="text-lg  border p-2 rounded-3xl text-white bg-[#646cff]">
+              Sumbit
+            </button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p variant="body2" color="text.secondary" align="center">
+          {"Copyright © "}
+          <Link color="inherit" href="https://streamsits.com/">
+            Streams IT Solutions
+          </Link>{" "}
+          {new Date().getFullYear()}
+          {"."}
         </p>
       </div>
-      <div>  <p>
-          We are persistently trying to upgrade our product and improve our
-          services to suit our customer’s requirements. We are pleased to
-          introduce our product MAKWAY-313 designed specifically for RMC. We
-          assure you that this product is extremely cost-effective,
-          user-friendly, and eco-friendly in nature.
-        </p></div>
-
-      <div>  <p>
-          We are persistently trying to upgrade our product and improve our
-          services to suit our customer’s requirements. We are pleased to
-          introduce our product MAKWAY-313 designed specifically for RMC. We
-          assure you that this product is extremely cost-effective,
-          user-friendly, and eco-friendly in nature.
-        </p></div>
-      <div>  <p>
-          We are persistently trying to upgrade our product and improve our
-          services to suit our customer’s requirements. We are pleased to
-          introduce our product MAKWAY-313 designed specifically for RMC. We
-          assure you that this product is extremely cost-effective,
-          user-friendly, and eco-friendly in nature.
-        </p></div>
     </div>
     // <Box
     //   component='footer'
@@ -142,5 +173,5 @@ export default function Footer() {
     //     </Box>
     //   </Container>
     // </Box>
-  )
+  );
 }
